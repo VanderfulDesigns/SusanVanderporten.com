@@ -1,0 +1,87 @@
+html, body {
+  overflow-x:hidden;
+}
+body {
+  font-family:'Roboto', sans-serif;
+  color:#4B5459;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family:'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight:400;
+  margin-bottom:;
+}
+
+p {
+  font-size:16px;
+  line-height:22px;
+  font-weight:300;
+}
+
+
+/* GRID */
+
+.one-half, .one-third, .one-fourth {
+  width:96%;
+  float:left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+  padding: 0px;
+}
+
+
+
+
+
+
+/* HEADER */
+
+
+ header .site-logo{
+ text-align: left;
+ }
+
+ header nav {
+  padding:1em 0 1em 0;
+  background: #282D33;
+  height:50px;
+ }
+
+ header nav ul {
+  display: inline-block;
+  text-align: right;
+  margin: 0;
+  padding:0px;
+ }
+
+ header nav ul > li {
+  list-style-type:none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px;
+ }
+
+
+header nav ul > li.btn-outline:hover{
+  background:#B2B2B2;
+  padding: 10px;
+}
+
+header nav ul > li a {
+  color:#B2B2B2;
+  text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+  .one-half {
+    width: 48%;
+    margin: 0 1%;
+  }
+}
+
+
+
