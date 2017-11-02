@@ -1,3 +1,178 @@
+/*HAMBURGER*/
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #282D33;
+  color: #B2B2B2;
+  font-family:'Roboto', sans-serif;  
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+a
+{
+  text-decoration: none;
+  color: #282D33;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #FFFFFF;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #B2B2B2;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #282D33;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 350px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: #29B2AF;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+
+/* HAMBURGER END */
+
+
+
+
 html, body {
   overflow-x:hidden;
 }
@@ -28,7 +203,7 @@ p {
   width:100%;
   float:left;
   position: relative;
-  min-height: 1px;
+  min-height: 0px;
   margin: 0 2% 20px;
   padding: 0px;
 }
@@ -39,6 +214,8 @@ p {
 
 
 /* HEADER */
+
+
 
 
  header .site-logo{
@@ -53,10 +230,7 @@ p {
  }
 
  header nav ul {
-  display: inline-block;
-  text-align: right;
-  margin: 0;
-  padding:0px;
+  display: none;
  }
 
  header nav ul > li {
@@ -81,10 +255,10 @@ header nav ul > li a {
   text-decoration: none;
 }
 
-.border{
+.main-nav{
     position:relative;
 }
-.border:hover::after{
+.main-nav:hover::after{
     content:'';
     position:absolute;
     width: 100%;
@@ -126,6 +300,18 @@ header nav ul > li a {
 }
 
 
+.hello a{
+  padding: 0 30px;
+  font-size: 35px;
+  color:#ffffff;
+}
+
+.hello a:hover{
+  font-size: 34px;
+  color:#282D33;
+}
+
+
 /* FEATURE SECTION */
 
 .features {
@@ -134,32 +320,76 @@ header nav ul > li a {
   color:#4B5459;
   padding:.25em;
 }
+.features:before, .features:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
   .features .one-half{
     background: #E8E8E8;
     padding:0px 0px 0px 0px;
     margin:0px 0px 0px 0px;
+    width: 50%;
   }
 
   .features .one-half img{ 
+    background: #E8E8E8;
    display:block;
    position: relative;
    height:100%;
    width:100%;
  }
 
+/* CONNECT SECTION */
 
 
 .connect {
-  background: #29B2AF;
+  background: url("../images/connect_backgroung.png") top center no-repeat;
   background-size: cover;
+  width: 100%;
   text-align: center;
-  color:#ffffff;
-  padding: 2em 2em;
+  color:#F9F9F9;
+  font-weight:300;
+  padding: 20px 20px 20px 20px;
 
+}
+/*Button*/
+
+.btn {
+  color:#29B2AF;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 1em;
+  padding: 10px 30px;
+  border-style: 1px;
+  border: 2px solid #29B2AF;
+ -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+   }
+
+
+.btn:hover{
+  color: #FFFFFF;
+  background:#29B2AF;
+}
+
+footer {
+  color:#ffffff;
+  positive: relative;
+  overflow: hidden;
+  padding: 0px;
+  z-index:0;
 }
 
 
+footer a{
+  color:#ffffff;
+}
+
+footer a:hover{
+  color:#29B2AF;
+}
 
 
 /*END OF MOBILE SECTION */
@@ -173,7 +403,7 @@ header nav ul > li a {
 
   /* HELLO */
 .hello {
-  padding: 5em 5em;
+  padding: 3em 3em;
 }
 
 .hello img{
@@ -181,7 +411,6 @@ header nav ul > li a {
   height:30%;
 
 }
-
 
 
 
@@ -198,15 +427,16 @@ header nav ul > li a {
   }
 
  header nav ul {
-  display: block;
+  display: inline-block;
   text-align: right;
-  float: right;
+  float:right;
   margin: 0;
+  padding:0px;
  }
 
 /* HELLO */
 .hello {
-  padding: 10em 12em;
+  padding: 8em 12em;
 }
 
 .hello img{
@@ -214,6 +444,10 @@ header nav ul > li a {
   height:25%;
 
 }
+
+#menuToggle {
+     display:none;
+   }
 
 
 /* FEATURE */
@@ -226,7 +460,7 @@ header nav ul > li a {
 
   /* HELLO */
 .hello {
-  padding: 10em 18em;
+  padding: 5em 15em;
 
   }
 

@@ -28,7 +28,35 @@
 
 
 <body>
+
+
 <!--Top Navigation-->
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--    All rights reserved    -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox"/>
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>CASE STUDIES</li></a>
+      <a href="#"><li>ABOUT</li></a>
+      <a href="#"><li>RESUME</li></a>
+    </ul>
+  </div>
+</nav>
+
+<!--END OF HAMBURGER-->
+
+
 <header>
   <nav class="container">
     <div class="one-half">
@@ -36,9 +64,9 @@
     </div>
     <div class="one-half">
       <ul>
-        <li><a class="border" href="casestudies.html">CASE STUDIES</a></li>
-        <li><a class="border" href="about.html">ABOUT</a></li>
-        <li><a class="border" href="resume.html">RESUMÉ</a></li>
+        <li><a class="main-nav" href="casestudies.html">CASE STUDIES</a></li>
+        <li><a class="main-nav" href="about.html">ABOUT</a></li>
+        <li><a class="main-nav" href="resume.html">RESUMÉ</a></li>
         </ul>
     </div>
   </nav>
@@ -73,12 +101,18 @@
      <h2>HELLO.</h2>
      <p>Welcome to my website. My Name is Susan Vanderporten and I am super cool. I advocate for people, design and love solving problems. I work and live in the Chicagoland area. Stay awhile learn more about me and my work.
      </p>
-     <!--PUT IN FONT AWESOME STUFF HERE TO LINK TO SOCIAL-->
+     <br/>
+     <br/>
+     <p>
+     <a href="mailto:susanvanderporten@gmail.com"><i class="fa fa-envelope"></i></a> <a href="https://twitter.com/VanderfulSusan"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/in/susan-vanderporten/"><i class="fa fa-linkedin"></i></a> 
+     </p>
     </section>
+
      <!--End of Hello-->
 
      <!--Features-->
      <section class="features">
+      
       <h2>FEATURED PROJECTS</h2>
 
           <div class="one-half">
@@ -105,15 +139,14 @@
             </a>
           </div> 
     </section>
+
     <!--End of Features-->
 
     <!--Connect-->
     <section class="connect">
-      <div class="connect-box">
       <h2>LET'S CONNECT</h2>
       <p>Like what you see? Want to learn more?</p>
-       <a href="mailto:susanvanderporten@gmail.com" class="btn"> Email Me.</a>
-      </div>
+       <a href="mailto:susanvanderporten@gmail.com" class="btn"> EMAIL ME.</a>
     </section>
     <!--End of Connect-->
 
@@ -128,34 +161,36 @@
        <div class="left-footer-block one-third">
          <p class="copyright-block">&copy; 2017. <strong>Susan Vanderporten</strong></p>
        </div>
-       <div class="right-footer-block one-third">
-
+    
+    <div class="right-footer-block one-third">
+    <p>
+     <a href="mailto:susanvanderporten@gmail.com"><i class="fa fa-envelope"></i></a> <a href="https://twitter.com/VanderfulSusan"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/in/susan-vanderporten/"><i class="fa fa-linkedin"></i></a> 
+     </p>
       <!--ADD IN SOCIAL MEDIA LINKS HERE-->
        </div>
 
    </div>
  </footer>
+
  <!--END OF FOOTER-->
 
 
 <!--Java for Slick Slider-->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
       $('.hero-slider').slick({
-        setting-name: setting-value
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
       });
+
     });
-    $('.fade').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-});
   </script>
         
 
