@@ -217,7 +217,12 @@ p {
 
 
 /* HEADER */
-
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 200;
+}
 
  header .site-logo{
  text-align: left;
@@ -271,6 +276,11 @@ header nav ul > li a {
 
 
 /* HERO */
+.hero {
+  position: relative;
+  top: 82px;
+  margin-bottom:82px;
+} 
 
  .hero img{ 
    display:block;
@@ -284,6 +294,7 @@ header nav ul > li a {
 
 /* HELLO SECTION */
 .hello {
+  position: relative;
   background: #29B2AF;
   background-size: cover;
   text-align: center;
@@ -331,7 +342,12 @@ header nav ul > li a {
     background: #E8E8E8;
     padding:0px 0px 0px 0px;
     margin:0px 0px 0px 0px;
-    width: 50%;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    .features .one-half {
+      width: 50%;
+    }
   }
 
   .features .one-half img{ 
