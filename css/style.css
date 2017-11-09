@@ -1,16 +1,7 @@
+
+
+
 /*HAMBURGER*/
-
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * All rights reserved
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
 body
 {
   margin: 0;
@@ -41,7 +32,7 @@ a:hover
   display: block;
   position: absolute;
   top: 30px;
-  right: 50px;
+  right: 30px;
   
   z-index: 1;
   
@@ -67,13 +58,24 @@ a:hover
 }
 
 /*
- * Just a quick hamburger
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+ /* Just a quick hamburger
  */
 #menuToggle span
 {
   display: block;
   width: 33px;
-  height: 4px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
   
@@ -182,10 +184,11 @@ body {
 }
 h1, h2, h3, h4, h5, h6{
   font-family:'Roboto', sans-serif;
+  font-weight:300;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight:300;
   margin-bottom:;
 }
@@ -216,11 +219,9 @@ p {
 /* HEADER */
 
 
-
-
  header .site-logo{
  text-align: left;
- padding:30px;
+ padding: 30px;
  }
 
  header nav {
@@ -286,7 +287,7 @@ header nav ul > li a {
   background: #29B2AF;
   background-size: cover;
   text-align: center;
-  color:#ffffff;
+  color:#e3e3e3;
   padding: 2em 2em;
 
 }
@@ -345,22 +346,27 @@ header nav ul > li a {
 
 
 .connect {
-  background: url("../images/connect_backgroung.png") top center no-repeat;
+  background: url("../images/connect_background.png") top center no-repeat;
   background-size: cover;
   width: 100%;
   text-align: center;
   color:#F9F9F9;
   font-weight:300;
   padding: 20px 20px 20px 20px;
-
 }
+
+
+.connect p{
+  padding-bottom:30px;
+}
+
+
 /*Button*/
 
 .btn {
   color:#29B2AF;
   font-weight: 300;
   text-decoration: none;
-  margin: 1em;
   padding: 10px 30px;
   border-style: 1px;
   border: 2px solid #29B2AF;
@@ -375,21 +381,94 @@ header nav ul > li a {
 }
 
 footer {
-  color:#ffffff;
+  color:#f9f9f9;
   positive: relative;
   overflow: hidden;
-  padding: 0px;
+  padding: 15px;
   z-index:0;
+  text-align:center;
+
+}
+
+footer p{
+font-size:12px;
 }
 
 
 footer a{
-  color:#ffffff;
+  color:#f9f9f9;
+  padding: 0 10px;
 }
 
 footer a:hover{
   color:#29B2AF;
 }
+
+
+/*CASE STUDY PAGE*/
+
+.casestudy-header {
+  background: #29B2AF;
+  color:#e3e3e3;
+  padding: 5px 30px;
+  z-index:0;
+  text-align:left;
+
+}
+.casestudy1-block {
+  color:#E4E4E4;
+  background: #282D33;
+  positive: relative;
+  overflow: hidden;
+  padding: 10px 30px;
+  z-index:0;
+  text-align:left;
+
+}
+
+.case-study-image {
+float:block;
+  width:100%;
+  height:100%;
+
+}
+
+
+.casestudy1-block p{
+  margin-top:25px;
+  padding-right:20px;
+  padding-bottom:15px;
+}
+
+.casestudy2-block {
+  color:#E4E4E4;
+  background: #4B5459;
+  positive: relative;
+  overflow: hidden;
+  padding: 10px 30px;
+  z-index:0;
+  text-align:left;
+
+}
+
+.casestudy2-block p{
+  margin-top:25px;
+  padding-right:20px;
+  padding-bottom:15px;
+
+
+}
+
+
+
+
+.resume {
+  background:#F9F9F9;
+  padding:2em 2em;
+}
+
+
+
 
 
 /*END OF MOBILE SECTION */
@@ -412,7 +491,12 @@ footer a:hover{
 
 }
 
+.case-study-image {
+float:block;
+  width:100%;
+  height:100%;
 
+}
 
 
 
@@ -426,12 +510,16 @@ footer a:hover{
     padding:0px 0px 0px 0px;
   }
 
+   header .site-logo{
+ padding: 60px;
+ }
+
  header nav ul {
   display: inline-block;
   text-align: right;
   float:right;
   margin: 0;
-  padding:0px;
+  padding:0 30px;
  }
 
 /* HELLO */
@@ -445,13 +533,49 @@ footer a:hover{
 
 }
 
+
 #menuToggle {
      display:none;
    }
 
+/*FOOTER*/
+footer {
+  padding: 15px 30px;
+  z-index:0;
+}
 
-/* FEATURE */
+footer .left-one-half{
+  z-index:0;
+  text-align:left;
+}
 
+footer .right-one-half{
+  z-index:0;
+  text-align:right;
+}
+
+.case-study-image {
+float:block;
+  width:100%;
+  height:100%;
+
+}
+
+.casestudy1-block h2{
+  margin-top:30px;
+}
+
+.casestudy2-block h2{
+  margin-top:30px;
+}
+
+.casestudy1-block p{
+  padding-right:50px;
+}
+
+.casestudy2-block p{
+  padding-right:50px;
+}
 
 
 
@@ -470,7 +594,21 @@ footer a:hover{
 
 }
 
+.casestudy1-block h2{
+  margin-top:50px;
+}
 
+.casestudy2-block h2{
+  margin-top:50px;
+}
+
+.casestudy1-block p{
+  padding-right:80px;
+}
+
+.casestudy2-block p{
+  padding-right:80px;
+}
 
 
 
