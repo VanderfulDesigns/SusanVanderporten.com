@@ -539,6 +539,8 @@ float:block;
 
 /*Case Studies*/
 
+
+
 .summary {
   background-color:#2ACCC9;
   padding:3em;
@@ -569,26 +571,35 @@ float:block;
 
 
 .intro {
-  background-color:#222222;
-  padding:2em;
-  margin:2em;
+  background-color:#f6f6f6;
+  padding:3em;
+
 }
 
 
 .intro p{
-  padding-bottom:20px;
+  padding-bottom:10px;
 }
 
- .intro .one-half{
-  background-color:#222222;
-
-
+@media screen and (min-width: 768px) {
+  .intro .one-half {
+    width: 46%;
+    margin: 0 4% 0 0;
+  }
+  .intro .one-half:last-child {
+    margin-right: 0;
+  }
 }
-
-
-
 
 .personas{
+  background-color:#f6f6f6;
+}
+
+.user-survey{
+  background-color:#f6f6f6;
+}
+
+.user-flows{
   background-color:#f6f6f6;
 }
 
