@@ -795,7 +795,11 @@ float:block;
   height:80%;
   width:80%;
   margin: 0% 10%;
-  padding-bottom:30px;
+  padding-bottom:50px;
+}
+
+.brand .brand2 p{
+
 }
 
 .user-flows ul li{
