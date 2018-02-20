@@ -676,6 +676,7 @@ float:block;
 
 .role {
   background:#0088c4;
+  color:#e3e3e3;
   padding:3em;
 }
 
@@ -790,7 +791,63 @@ float:block;
   margin: 3% 10%;
 }
 
+.brand img{
+  height:80%;
+  width:80%;
+  margin: 0% 10%;
+  padding-bottom:30px;
+}
 
+.user-flows ul li{
+  list-style-type:circle;
+  font-weight:300;
+  line-height:26px;
+  padding-bottom:5px;
+  font-size:16px;
+
+}
+
+
+.conclusion {
+  background:#0088c4;
+  color:#e3e3e3;
+  padding:3em 3em 0 3em;
+}
+
+.conclusion ul li{
+  list-style-type:circle;
+  font-weight:300;
+  line-height:26px;
+  padding-bottom:5px;
+  font-size:16px;
+  color:#e3e3e3;
+  padding-right:30px;
+}
+
+.conclusion img{
+  height:100%;
+  width:100%;
+  margin: 0% 0% -4px 0%;
+}
+
+/*
+.conclusion .btn {
+  color:#e3e3e3;
+  margin-top:20%;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-style: 1px;
+  border: 2px solid #e3e3e3;
+ -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+   }
+*//* Safari */
+
+/*.conclusion .btn:hover{
+  color: #282D33;
+  background:#e3e3e3;
+}*/
 
 
 .three-fourths {
@@ -863,7 +920,6 @@ float:block;
   width:40%;
   height:40%;
   padding:0% 25%;
-;
 }
 
 
