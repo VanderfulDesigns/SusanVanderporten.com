@@ -468,7 +468,6 @@ footer {
   color:#f9f9f9;
   positive: relative;
   overflow: hidden;
-  padding: 15px;
   z-index:0;
   text-align:center;
 
@@ -1022,17 +1021,19 @@ padding: 40px 1% 0px;
 
 /*FOOTER*/
 footer {
-  padding: 15px 30px;
+  padding: 20px 0em 10px 3em;
   z-index:0;
 }
 
 footer .left-one-half{
   z-index:0;
+  margin:-15px 0 0 0;
   text-align:left;
 }
 
 footer .right-one-half{
   z-index:0;
+
   text-align:right;
 }
 
