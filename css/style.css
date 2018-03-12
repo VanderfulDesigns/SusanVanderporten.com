@@ -320,7 +320,7 @@ header nav ul > li a {
   background: #29B2AF;
   background-size: cover;
   text-align: center;
-  color:#e3e3e3;
+  color:#ffffff;
   padding: 2em 2em;
 
 }
@@ -495,7 +495,7 @@ footer a:hover{
   top: 82px;
   margin-bottom:82px;
   background: #29B2AF;
-  color:#e3e3e3;
+  color:#ffffff;
   padding: 5px 35px;
   z-index:0;
   text-align:left;
@@ -653,7 +653,7 @@ float:block;
 .casestudy-hero .casestudyhero-content {
   width:85%;
   padding: 35% 50px 20% 30px;
-  color:#e3e3e3;
+  color:#ffffff;
   z-index:1;
 
  }
@@ -664,12 +664,12 @@ float:block;
  }
 
   .casestudy-hero .casestudyhero-content .btn {
-  color:#e3e3e3;
+  color:#ffffff;
   font-weight: 300;
   text-decoration: none;
   padding: 10px 30px;
   border-style: 1px;
-  border: 2px solid #e3e3e3;
+  border: 2px solid #ffffff;
  -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
    }
@@ -677,7 +677,7 @@ float:block;
 
 .casestudy-hero .casestudyhero-content .btn:hover{
   color: #282D33;
-  background:#e3e3e3;
+  background:#ffffff;
 }
 
 
@@ -695,13 +695,13 @@ float:block;
 
 .role {
   background:#0088c4;
-  color:#e3e3e3;
+  color:#ffffff;
   padding:3em;
 }
 
 #improve .role {
   background:#50BE75;
-  color:#e3e3e3;
+  color:#ffffff;
   padding:3em;
 }
 
@@ -728,15 +728,15 @@ float:block;
 
 
 .role p{
-  color:#e3e3e3;
+  color:#ffffff;
 }
 
 .role h2{
-  color:#e3e3e3;
+  color:#ffffff;
 }
 
 .role h3{
-  color:#e3e3e3;
+  color:#ffffff;
 }
 
 .role ul li{
@@ -744,7 +744,7 @@ float:block;
   font-weight:300;
   line-height:26px;
   padding-bottom:5px;
-  color:#e3e3e3;
+  color:#ffffff;
   font-size:16px;
 }
 
@@ -761,7 +761,7 @@ float:block;
 
 .personas{
   background-color:#4B5459;
-  color:#e3e3e3;
+  color:#ffffff;
 }
 
 .personas h3{
@@ -807,7 +807,7 @@ float:block;
 
 .low-wireframes{
   background-color:#4B5459;
-  color:#e3e3e3;
+  color:#ffffff;
 }
 
 .low-wireframes img{
@@ -815,6 +815,14 @@ float:block;
   width:80%;
   margin: 3% 10%;
 }
+
+#improve .low-wireframes img{
+  height:100%;
+  width:100%;
+  margin: 0% 0%;
+
+}
+
 
 .brand .one-half img{
   height:80%;
@@ -843,7 +851,7 @@ float:block;
 
 .conclusion {
   background:#0088c4;
-  color:#e3e3e3;
+  color:#ffffff;
   padding:3em 3em 0 3em;
 }
 
@@ -853,7 +861,7 @@ float:block;
   line-height:26px;
   padding-bottom:5px;
   font-size:16px;
-  color:#e3e3e3;
+  color:#ffffff;
   padding-right:30px;
 }
 
