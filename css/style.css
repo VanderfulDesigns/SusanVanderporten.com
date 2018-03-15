@@ -870,6 +870,13 @@ float:block;
   padding:3em 3em 0 3em;
 }
 
+#improve .conclusion {
+  background:#50BE75;
+  color:#ffffff;
+  padding:3em;
+}
+
+
 .conclusion ul li{
   list-style-type:circle;
   font-weight:300;
@@ -884,6 +891,12 @@ float:block;
   height:100%;
   width:100%;
   margin: 0% 0% -4px 0%;
+}
+
+#improve .conclusion img{
+  height:100%;
+  width:100%;
+  margin: 0% 0% -52px 0%;
 }
 
 /*
